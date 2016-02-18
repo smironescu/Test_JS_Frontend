@@ -1,6 +1,7 @@
 @import "_circleImpresions.scss";
 @import "_circleRevenue.scss";
 @import "_circleVisits.scss";
+@import "_mixins.scss";
 
 body {
   font-size: 1em;
@@ -14,7 +15,7 @@ body {
     width: 100%;
     margin: 25% auto;
     & > div {
-      width: 300px;
+      width: 320px;
       margin: 0 40px 0 0;
     }
   }
