@@ -3,18 +3,6 @@
     display: inline-block;
     position: relative;
     height: 250px;
-    &:after {
-      content:  $text;
-      display: block;
-      position: absolute;
-      color: #ccc;
-      top: 65px;
-      font-size: 1.2em;
-      font-weight: bold;
-      left: 15px;
-      width: 250px;
-      text-align: center;
-    }
     svg {
       margin-left: 40px;
       position: relative;
@@ -28,6 +16,17 @@
         height: 50px;
       }
     }
+    & > text {
+      font-size: 1.3em;
+      text-align: center;
+      margin-top: -100px;
+      position: absolute;
+      color: white;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      background: rgb(202, 60, 60);
+      padding: 10px;
+    }
     .devices--wrapper--#{$circleName} {
       height: 50px;
       line-height: 20px;
@@ -35,6 +34,17 @@
       width: 320px;
       position: absolute;
       bottom: 0;
+      &:after {
+        content:  $text;
+        display: block;
+        color: #ccc;
+        margin-top: -170px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-left: 15px;
+        width: 250px;
+        text-align: center;
+      }
     }
 
     .smartphone--block--#{$circleName} {
@@ -61,6 +71,7 @@
     .smartphone--totalAmount--#{$circleName} {
       font-weight: bold;
       color: #ccc;
+      padding-left: 5px;
     }
 
     .device--tablet--#{$circleName} {
@@ -80,6 +91,7 @@
     .tablet--totalAmount--#{$circleName} {
       font-weight: bold;
       color: #ccc;
+      padding-left: 5px;
     }
   }
 }

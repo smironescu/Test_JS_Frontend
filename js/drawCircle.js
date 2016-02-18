@@ -11,8 +11,6 @@ define(["lib/d3"], function (d3) {
             for(var i = 0; i < _colors.length; i++){
                 if(_colors[i] === name){
                     return _colors[i] = name;
-                }else{
-                    console.log("No color match!!")
                 }
             }
         }

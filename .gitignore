@@ -1,2 +1,5 @@
 .sass-cache/
+.idea/
 *.css.map
+*.idea
+*.xml
