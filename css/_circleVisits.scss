@@ -1,0 +1,61 @@
+#visits--circle {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  svg {
+    margin-left: 40px;
+  }
+  .devices--wrapper--visits {
+    height: 50px;
+    line-height: 20px;
+    border-bottom: 3px solid #f4f4f4;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .smartphone--block--visits {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 180px;
+    text-align: right;
+  }
+
+  .device-smartphone--visits {
+    font-weight: bold;
+    color: #e94c00;
+    display: block;
+  }
+
+  .smartphone--percent--visits {
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+    color: #444;
+  }
+
+  .smartphone--totalAmount--visits {
+    font-weight: bold;
+    color: #ccc;
+  }
+
+  .device--tablet--visits {
+    color: #ffc800;
+    padding-left: 5px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .tablet--percent--visits {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #444;
+  }
+
+  .tablet--totalAmount--visits {
+    font-weight: bold;
+    color: #ccc;
+  }
+}

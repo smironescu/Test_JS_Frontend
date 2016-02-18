@@ -5,4 +5,17 @@
 body {
   font-size: 1em;
   font-family: "arial", "sans-serif";
+  width: 80%;
+  margin: 0 auto;
+  .progress-meter text {
+    font-size: 1.4em;
+  }
+  #main-wrapper {
+    width: 100%;
+    margin: 25% auto;
+    & > div {
+      width: 300px;
+      margin: 0 40px 0 0;
+    }
+  }
 }

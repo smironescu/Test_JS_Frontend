@@ -1,11 +1,11 @@
 define(["../lib/d3", "drawCircle"], function (d3, drawCircle) {
 
-    var drawCircleRevenue = function(percentage){
+    var drawCircleRevenue = function(percentage, color, secondaryColor){
 
         var colors = new drawCircle();
         drawCircle.call(this);
 
-        var color = colors.getColor("blue");
+        var color = colors.setColor(color);
         var totalRevenue = "50.000.000€";
 
         var smartphonePercent = percentage / 100;
@@ -50,7 +50,7 @@ define(["../lib/d3", "drawCircle"], function (d3, drawCircle) {
 
         meter.append('path')
             .attr('class', 'background')
-            .attr('fill', 'lightblue')
+            .attr('fill', secondaryColor)
             .attr('d', arc.endAngle(twoPi));
 
         var foreground = meter.append('path')
@@ -69,7 +69,7 @@ define(["../lib/d3", "drawCircle"], function (d3, drawCircle) {
 
         var totalNumberRevenues = meter.append('text')
             .text(totalRevenue)
-            .attr('fill', '#000')
+            .attr('fill', '#444')
             .attr('font-weight', 'bold')
             .attr('text-anchor', 'middle')
             .attr('dy', '.35em');
